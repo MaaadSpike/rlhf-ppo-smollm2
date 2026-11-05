@@ -1,6 +1,6 @@
 # RLHF with PPO on a 135M Model: A Small, Reproducible Pipeline
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MaaadSpike/rlhf-ppo-smollm2/blob/main/notebooks/rlhf_ppo_colab.ipynb)
+ [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MaaadSpike/rlhf-ppo-smollm2/blob/main/RLHF_PPO_Colab_v2.ipynb)
 
 An end-to-end RLHF reproduction that fits on a single Colab GPU:
 
