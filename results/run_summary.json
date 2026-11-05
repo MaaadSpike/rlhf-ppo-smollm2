@@ -1,0 +1,80 @@
+{
+  "source": "copied from cell outputs of notebooks/rlhf_ppo_colab.ipynb (run 2026-10-23, Colab A100)",
+  "config": {
+    "profile": "extended",
+    "seed": 42,
+    "model_id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "model_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "dataset_id": "Anthropic/hh-rlhf (helpful-base)",
+    "dataset_revision": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
+    "rm_train": 4096,
+    "rm_val": 512,
+    "rm_test": 512,
+    "sft_examples": 2048,
+    "ppo_prompts": 1024,
+    "eval_prompts": 96,
+    "rm_epochs": 3,
+    "ppo_updates": 128,
+    "ppo_batch": 4,
+    "ppo_lr": 1e-05,
+    "kl_coef": 0.1,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "max_prompt_tokens": 96,
+    "max_response_tokens": 96,
+    "max_new_tokens": 48
+  },
+  "reward_model": {
+    "validation_history": [
+      {
+        "epoch": 1,
+        "pair_accuracy": 0.65234375,
+        "accuracy_95ci": [
+          0.6101,
+          0.6923
+        ],
+        "pair_loss": 0.6274
+      },
+      {
+        "epoch": 2,
+        "pair_accuracy": 0.671875,
+        "accuracy_95ci": [
+          0.6301,
+          0.7111
+        ],
+        "pair_loss": 0.6066,
+        "selected": true
+      },
+      {
+        "epoch": 3,
+        "pair_accuracy": 0.677734375,
+        "accuracy_95ci": [
+          0.6361,
+          0.7168
+        ],
+        "pair_loss": 0.6262
+      }
+    ],
+    "test": {
+      "pair_accuracy": 0.6953125,
+      "accuracy_95ci": [
+        0.6541,
+        0.7336
+      ],
+      "pairs": 512,
+      "pair_loss": 0.5879,
+      "mean_margin": 0.4964
+    }
+  },
+  "ppo": {
+    "before_mean_reward": -0.14664730398605266,
+    "after_mean_reward": -0.143897231357793,
+    "reward_delta_bootstrap_95ci": [
+      -0.15876844300267595,
+      0.161782104258115
+    ],
+    "before_mean_response_tokens": 30.177083333333332,
+    "after_mean_response_tokens": 31.625,
+    "peak_ppo_vram_gib": 1.3
+  }
+}

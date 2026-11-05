@@ -1,0 +1,15 @@
+# Run outputs produced by the notebook
+rlhf_*/
+*_results.zip
+cache/
+checkpoints/
+*.safetensors
+rlhf_ppo_environment_v2.json
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.env
+.DS_Store

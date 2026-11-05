@@ -1,0 +1,12 @@
+# Python 3.10-3.12. PyTorch (CUDA build) is taken from the Colab image and not pinned here.
+numpy==1.26.4
+pandas==2.2.3
+transformers==4.45.2
+tokenizers==0.20.3
+trl==0.11.4
+peft==0.13.2
+accelerate==1.10.1
+datasets==3.2.0
+tyro==0.8.14
+rich==13.9.4
+matplotlib>=3.8,<4
